@@ -11,6 +11,11 @@
     background-position: center;
     position: relative;
 }
+@media(max-width: 700px){
+    .header{
+        position:fixed;
+    }
+}
 nav{
     display: flex;
     padding: 1% 3%;
@@ -185,7 +190,7 @@ form button{
 }
 @media(max-width: 700px){
     form{
-        position:static;
+        position:fixed;
     }
 }
 .footer{
@@ -198,7 +203,7 @@ form button{
 }
 @media(max-width: 700px){
     .footer{
-        position: static;
+        position: fixed;
     }
 }
 .footer h4{
