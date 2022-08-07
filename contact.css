@@ -148,6 +148,11 @@ form{
     max-width: 600px;
     border-radius: 10px;
 }
+@media(max-width: 700px){
+    form{
+        position: relative;
+    }
+}
 form h3{
     color: black;
     font-weight: 800;
@@ -190,6 +195,11 @@ form button{
     padding: 30px, 0;
     padding-bottom: 30px;
 
+}
+@media(max-width: 700px){
+    .footer{
+        position: relative;
+    }
 }
 .footer h4{
     margin-bottom: 5px;
