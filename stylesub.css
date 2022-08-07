@@ -186,7 +186,7 @@ form input{
     border: 0;
     outline: none;
     height: 70px;
-    width: 300px;
+    width: 400px;
     font-size: 16px;
     padding-left: 20px;
 }
@@ -206,9 +206,12 @@ span{
 }
 @media(max-width: 700px){
     form{
-        margin-left: 3%;
+        margin-left: 30px;
         margin-top: 2%;
         margin-right: 3%;
+    }
+    form input{
+        width: 300px;
     }
 }
 
