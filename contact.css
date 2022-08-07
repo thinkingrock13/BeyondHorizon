@@ -183,6 +183,11 @@ form button{
     margin-right: auto;
     border-radius: 30px;
 }
+@media(max-width: 700px){
+    form{
+        position: absolute;
+    }
+}
 .footer{
     width: 100%;
     background: #B7BF96;
