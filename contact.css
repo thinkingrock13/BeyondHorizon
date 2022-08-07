@@ -104,12 +104,7 @@ nav .bi{
         padding-bottom: 30px;
     }
 }
-@media(max-width: 700px){
-    body{
-        min-height: 1500px
-    }
- 
-}
+
 .subscribe{
     width:100%;
     background: #C8B88A;
@@ -144,6 +139,12 @@ nav .bi{
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+}
+@media(max-width: 700px){
+    .contact{
+        min-height: 100vh
+    }
+ 
 }
 form{
     background: #E4DEAE;
