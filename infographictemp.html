@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Beyond Horizon</title>
+    <link rel="stylesheet" href="infographictemp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body bgcolor="#B3CF99">
+<section class="header">
+        <nav>
+            <a href="index.html"><img src="images/LogoW.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hidemenu()"></i>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="infographic.html">Infographics</a></li>
+                <li><a href="article.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+            </div>
+        <i class="bi bi-list" onclick="showmenu()"></i>
+        </nav>
+    </section>
+<div class="info">
+<h2 class="tit">Title of the Article</h2>
+    <h6 class="date">date</h6>
+    <a href="images/image.jpg" target=”_blank”><img src="images/image.jpg" class="ima"></a>
+    
+</div>
+    <!------Footer------> 
+   <section class="footer">
+    <h4>BEYOND HORIZON</h4>
+    <p>Information on latest environmental happenings explained simply using visual representation<br>and easy-to-understand articles.</p>
+    <div class="icons">
+        <a href="https://www.instagram.com/beyondhorizon.media/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="contact.html"><i class="bi bi-envelope"></i></a>
+    </div>
+        <p class="copy">©Beyond Horizon 2022</p>
+    </section>
+
+<!------Javascript------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
