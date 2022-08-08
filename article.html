@@ -18,7 +18,7 @@
 
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">Infographics</a></li>
+                <li><a href="infographic.html">Infographics</a></li>
                 <li><a href="article.html">Articles</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
@@ -29,14 +29,12 @@
     </section>
 <section class="search">
     <div class="container">
-        <form class="search-bar">
-            <input type="text" placeholder="Search articles" name="q">
-            <button type="submit">Search</button>
-        </form>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search articles" title="Type words">
+        <div class="output"></div>
     </div>
 </section>
 <section class="artlist">
-    <ul>
+    <ul id="myUL">
         <li><a href="">Heading numbeffffffffffffffffffffffffffff sdfffffffffffffffffsdffffff number one</a></li>
         <br>
         <li><a href="">Heading number two</a></li>
@@ -44,13 +42,14 @@
 </section>
      
 <!------Footer------> 
-    <section class="footer">
+   <section class="footer">
     <h4>BEYOND HORIZON</h4>
-    <p>Where data meets the eye</p>
+    <p>Information on latest environmental happenings explained simply using visual representation<br>and easy-to-understand articles.</p>
     <div class="icons">
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-envelope"></i></a>
+        <a href="https://www.instagram.com/beyondhorizon.media/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="contact.html"><i class="bi bi-envelope"></i></a>
     </div>
+        <p class="copy">©Beyond Horizon 2022</p>
     </section>
 
 <!------Javascript------>
@@ -82,5 +81,23 @@
     
     
     </script>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 </body>
 </html>
