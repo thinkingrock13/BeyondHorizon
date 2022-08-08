@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Beyond Horizon</title>
-    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="articletemp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -27,20 +27,26 @@
         <i class="bi bi-list" onclick="showmenu()"></i>
         </nav>
     </section>
-<section class="search">
-    <div class="container">
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search articles" title="Type words">
-        <div class="output"></div>
+<div id="overall">
+<div class="row">
+    <div class="column">
+        <div class="left">
+        <h2 class="tit">Title of the Article</h2>
+    <h6 class="auth">Author - Date</h6>
+    <p class="sto">   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h6 class="sou">Sources:</h6>
+            <ul class="inl">
+                <li><a href="">S1</a>
+                </li>
+                <li><a href="">S2</a>
+                </li>
+                <li><a href="">S3</a>
+                </li>
+            </ul>
     </div>
-</section>
-<section class="artlist">
-    <ul id="myUL">
-        <li><a href="">Article 1</a></li>
-        <br>
-        <li><a href="">Article 2</a></li>
-    </ul>
-</section>
-     
+        <div class="right"><img src="images/image.jpg"></div>
+</div>
+</div>
 <!------Footer------> 
    <section class="footer">
     <h4>BEYOND HORIZON</h4>
@@ -61,43 +67,6 @@
     function hidemenu(){
         navLinks.style.right = "-200px";
     }
-</script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-                        Email.send({
-                SecureToken: "1dbec580-a0dc-4c7e-900f-f547356d87fb",
-                To : 'mailus.beyondhorizon@gmail.com',
-                From : 'mailus.beyondhorizon@gmail.com',
-                Subject : "Visitor Message",
-                Body : "Name: " + document.getElementById("name").value
-                + "<br> Email: " + document.getElementById("email").value
-                + "<br> Message: " + document.getElementById("message").value
-                }).then(
-              message => alert("Message sent successfully!")
-            );
-
-        }
-    
-    
-    </script>
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
 </script>
 </body>
 </html>
