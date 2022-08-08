@@ -125,6 +125,7 @@ nav .bi{
     border: none;
     outline: none;
     padding-left: 20px;
+    font-size: 16px;
 }
 .search .container form button{
     background: #C8B88A;
@@ -135,6 +136,7 @@ nav .bi{
     color: black;
     letter-spacing: 1px;
     cursor: pointer;
+    font-size: 16px;
     
 }
 @media(max-width: 700px){
