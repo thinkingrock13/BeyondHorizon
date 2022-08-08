@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+html, body{
+    
+}
 .header{
     min-height: 150px;
     width: 100%;
@@ -189,6 +192,7 @@ form button{
     text-align: center;
     padding: 30px, 0;
     padding-bottom: 30px;
+    margin-top: 100px;
 
 }
 .footer h4{
