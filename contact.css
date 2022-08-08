@@ -3,8 +3,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-html, body{
-    
+@media(max-width: 700px){
+    body{
+        position: absolute;
+    }
 }
 .header{
     min-height: 150px;
