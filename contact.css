@@ -140,6 +140,11 @@ nav .bi{
     justify-content: center;
     margin-bottom: 30px;
 }
+@media(max-width: 700px){
+    .contact .container{
+        margin-top: 10vh;
+    }
+}
 form{
     background: #E4DEAE;
     display: flex;
@@ -186,7 +191,7 @@ form button{
 }
 @media(max-width: 700px){
     .contact{
-        min-height: 100%;
+        min-height: 100vh;
     }
 }
 .footer{
