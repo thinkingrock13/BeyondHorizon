@@ -160,6 +160,16 @@ nav .bi{
   font-size: 40px;
   color: black;
 }
+    .tagtit{
+        font-size: 18px;
+        margin-left: 30px;
+    }
+    .tags{
+        color: dimgrey;
+        font-size: 18px;
+        margin-left: 30px;
+    }
+    
 @media screen and (max-width: 800px) {
   .column {
     display: flex;
@@ -194,8 +204,18 @@ nav .bi{
         font-size: 20px;
         text-align: justify;
         text-justify: inter-word;
-}
     
+}
+    .sou{
+        margin-left: 20px;
+    }
+    .tagtit{
+        margin-left: 20px;
+    }
+    .tags{
+         margin-left: 20px;
+    }
+
 }
 
 .footer h4{

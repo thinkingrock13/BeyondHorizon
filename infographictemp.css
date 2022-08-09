@@ -138,6 +138,17 @@ nav .bi{
     margin-right: 10px;
     
 }
+.tagtit{
+        font-size: 18px;
+        margin-left: 20%;
+    margin-right: 10px
+    }
+    .tags{
+        color: dimgrey;
+        font-size: 18px;
+        margin-left: 20%;
+        margin-right: 10px
+    }
 @media(max-width: 700px){
     .tit{
         font-size: 20px;
@@ -153,6 +164,15 @@ nav .bi{
     margin-left: 10%;
     margin-top: 20px;
 }
+    .sou{
+        margin-left: 10%;
+    }
+    .tagtit{
+        margin-left: 10%;
+    }
+    .tags{
+         margin-left: 10%;
+    }
 }
 
     
