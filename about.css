@@ -105,57 +105,25 @@ nav .bi{
         padding-bottom: 30px;
     }
 }
-.info{
-    width: 100%;
-    align-items: center;
-}
 .tit{
-    font-size: 30px;
-    margin-left: 20%;
-    margin-right: 10px;
-    
+    font-size: 50px;
+    text-align:center;
 }
-.ima{
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 40px;
-}
-.date{
-    font-size: 18px;
-    color: dimgrey;
-    margin-left: 20%;
-    margin-right: 10px;
-}
-    .sou {
-    font-size: 15px;
-    margin-top: 30px;
-    margin-left: 20%;
-        margin-right: 10px;
-}
-.inl li{
-    font-size: 30x;
-    margin-left: 20%;
-    margin-right: 10px;
-    
+.quo{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    margin-top: 20px;
+    min-height: 60vh;
 }
 @media(max-width: 700px){
     .tit{
-        font-size: 20px;
-        margin-left: 10%;
+        font-size: 30px;
     }
-    .date{
-    font-size: 16px;
-    color: dimgrey;
-    margin-left: 10%;
+    .quo{
+        font-size: 18px;
+    }
 }
-    .ima{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 20px;
-}
-}
-
-    
 .footer{
     width: 100%;
     background: #B7BF96;

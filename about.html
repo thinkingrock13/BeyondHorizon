@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Beyond Horizon</title>
-    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -28,20 +28,15 @@
         <i class="bi bi-list" onclick="showmenu()"></i>
         </nav>
     </section>
-<section class="search">
-    <div class="container">
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search articles" title="Type words">
-        <div class="output"></div>
-    </div>
-</section>
-<section class="artlist">
-    <ul id="myUL">
-        <li><a href="articletemp.html">Article 1</a></li>
-        <br>
-        <li><a href="articletemp.html">Article 2</a></li>
-    </ul>
-</section>
+    
+<div class="cont">
+    <h2 class="tit" style="text-align:center">
+        About
+    </h2>
+    <p class="quo"><i>"If you can't explain it simply, you don't understand it well enough."<br>-Albert Einstein</i><br><br>Hello! The goal of Beyond Horizon is to represent information in a simple, easy-to-understand manner, visual or written. With the plethora of news about environment, it can be difficult to understand everything. This is an attempt to bring such data out to the public, in a concise, simple way. Personally, as a partial visual-learner, it is easy for me to grasp information when it is displayed well, instead of skimming through loads of pages. Though it true that the information is less, and relatively it is not thorough, still in a way, visual data forms can be educational and quick-to-grasp! Also bringing to you articles worded in a simple way, trying to be as precise as possible. Hope you like it here!<br><br>Regards,<br>Subiksha Chandrasekar</p>
+</div>
      
+    
 <!------Footer------> 
    <section class="footer">
     <h4>BEYOND HORIZON</h4>
@@ -62,43 +57,6 @@
     function hidemenu(){
         navLinks.style.right = "-200px";
     }
-</script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-                        Email.send({
-                SecureToken: "1dbec580-a0dc-4c7e-900f-f547356d87fb",
-                To : 'mailus.beyondhorizon@gmail.com',
-                From : 'mailus.beyondhorizon@gmail.com',
-                Subject : "Visitor Message",
-                Body : "Name: " + document.getElementById("name").value
-                + "<br> Email: " + document.getElementById("email").value
-                + "<br> Message: " + document.getElementById("message").value
-                }).then(
-              message => alert("Message sent successfully!")
-            );
-
-        }
-    
-    
-    </script>
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
 </script>
 </body>
 </html>
