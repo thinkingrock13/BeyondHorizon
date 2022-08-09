@@ -59,6 +59,8 @@ nav img{
     font-size: 28px;
     color: #011810;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 nav .bi{
     display: none;
@@ -159,6 +161,10 @@ a:active {
     padding-bottom: 100px;
     margin-top: 50px;
     text-align: center;
+}
+.subscribe h3{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .btn{
     display: inline-block;
