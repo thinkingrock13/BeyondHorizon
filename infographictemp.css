@@ -110,10 +110,33 @@ nav .bi{
     align-items: center;
 }
 .tit{
-    font-size: 30px;
+    font-size: 35px;
     margin-left: 20%;
     margin-right: 10px;
     
+}
+.ico{
+    margin-left: 20%;
+}
+.btn.btn2{
+     display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.ico .bi{
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 10px;
 }
 .ima{
     width: 60%;
@@ -149,9 +172,23 @@ nav .bi{
         margin-left: 20%;
         margin-right: 10px
     }
+hr{
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-top: 1px solid black;
+    align-self: center;
+    width: 90%;
+}
+.lin{
+    display: none;
+}
 @media(max-width: 700px){
+    .lin{
+        display: inline;
+    }
     .tit{
-        font-size: 20px;
+        font-size: 30px;
         margin-left: 10%;
     }
     .date{
@@ -173,6 +210,20 @@ nav .bi{
     .tags{
          margin-left: 10%;
     }
+    .ico{
+    margin-left: 10%;
+    }
+        .btn.btn2{
+            font-size: 15px;
+            padding: 2px,2px;
+        }
+    .ico .bi{
+            font-size: 20px;
+            padding-bottom: 30px;
+        border: 0;
+        border-radius: 0;
+        padding-bottom: 
+        }
 }
 
     

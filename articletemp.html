@@ -34,6 +34,17 @@
         <div class="left">
         <h2 class="tit">Title of the Article</h2>
     <h6 class="auth">Author - Date</h6>
+            <br>
+    <div class="ico">
+    <a href="images/image.pdf" download class="btn btn2" target="_blank">Download</a>
+        <br class="lin"><br class="lin">
+    <span class="buttons whatsapp"><i class="bi bi-whatsapp"></i></span>
+        <span class="buttons facebook"><i class="bi bi-facebook"></i></span>
+        <span class="buttons twitter"><i class="bi bi-twitter"></i></span>
+        <span class="buttons reddit"><i class="bi bi-reddit"></i></span>
+        <span class="buttons pinterest"><i class="bi bi-pinterest"></i></span>
+    </div>
+    <center><hr></center>
     <p class="sto">   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h6 class="sou">Sources:</h6>
             <ul class="inl">
@@ -72,5 +83,41 @@
         navLinks.style.right = "-200px";
     }
 </script>
+    <script>
+        const whatsapp = document.querySelector('.whatsapp')
+        const facebook = document.querySelector('.facebook')
+    const twitter = document.querySelector('.twitter')
+    const reddit = document.querySelector('.reddit')
+    const pinterest = document.querySelector('.pinterest')
+    
+    const pageURL = location.href
+    
+    const message = 'Check out this post!'
+    
+    const whatsappApi = `https://wa.me/?text= ${pageURL}. ${message}`
+    const facebookApi=`https://www.facebook.com/sharer.php?u=${pageURL}. `
+    const twitterApi = `https://twitter.com/intent/tweet?text=${pageURL}. ${message}`
+    const redditApi =`https://reddit.com/submit?url=${pageURL}&title=${message}`
+    const pinterestApi = `https://pinterest.com/pin/create/bookmarklet/?media=&url=${pageURL}&description=${message}`
+        
+    whatsapp.addEventListener('click',() => {
+        window.open(URL = whatsappApi, target = 'blank')
+    })
+        facebook.addEventListener('click',() => {
+        window.open(URL = facebookApi, target = 'blank')
+    })
+        twitter.addEventListener('click',() => {
+         window.open(URL = twitterApi, target = 'blank')
+    })
+        reddit.addEventListener('click',() => {
+        window.open(URL = redditApi, target = 'blank')
+    })
+        pinterest.addEventListener('click',() => {
+        window.open(URL = pinterestApi, target = 'blank')
+    })
+    
+    
+    </script>
+
 </body>
 </html>
