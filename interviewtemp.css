@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 150px;
+    width: 100%;
+    background-color: #B3CF99;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 160px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #011810;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold; 
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #011810 ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+.text-box{
+    width: 100%;
+    position:absolute;
+    text-align: center;
+    padding-left: 0px;
+    
+}
+.text-box h4{
+    font-size: 28px;
+    color: #011810;
+    text-align: center;
+}
+nav .bi{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    nav{
+        font-size: 30px;
+    }
+    .text-box h4{
+        font-size: 25px;
+        padding-left: none;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #E4DEAE;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .bi{
+        display: block;
+        color: #011810;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+}
+.footer{
+    width: 100%;
+    background: #B7BF96;
+    text-align: center;
+    padding: 30px, 0;
+    padding-bottom: 30px;
+    margin-top: 100px;
+
+}
+#overall{
+    min-height: 90%;
+    padding-top: 30px;
+    color: black;
+}
+.column{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.left{
+    flex-basis: 60%;
+    
+}
+.right{
+    flex-basis: 35%;
+}
+.right img{
+    width: 90%;
+}
+.tit{
+    font-size: 60px;
+    margin-left: 30px;
+}
+.auth{
+    font-size: 20px;
+    margin-left: 30px;
+    color: dimgrey;
+}
+hr{
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-top: 1px solid black;
+    align-self: center;
+    width: 96%;
+}
+.lin{
+    display: none;
+}
+@media(max-width: 700px){
+    .lin{
+        display: inline;
+    }
+}
+.ico{
+    margin-left: 30px;
+}
+.btn.btn2{
+     display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.ico .bi{
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 10px;
+}
+.sto{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.sou {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.inl li{
+    font-size: 30x;
+    margin-left: 30px;
+}
+.sto::first-letter {
+  font-size: 40px;
+  color: black;
+}
+    .tagtit{
+        font-size: 18px;
+        margin-left: 30px;
+    }
+    .tags{
+        color: dimgrey;
+        font-size: 18px;
+        margin-left: 30px;
+    }
+    
+@media screen and (max-width: 800px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .column div:first-child {
+    order: 1;
+  }
+    .right img{
+        width:90%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .tit{
+    font-size: 30px;
+    margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+}
+    .auth{
+    font-size: 15px;
+    margin-left: 20px;
+        margin-right: 20px;
+    color: dimgrey;
+        margin-top: 20px;
+}
+    .sto{
+    margin-left: 20px;
+    margin-right: 20px;
+        font-size: 20px;
+        text-align: justify;
+        text-justify: inter-word;
+    
+}
+    .sou{
+        margin-left: 20px;
+    }
+    .tagtit{
+        margin-left: 20px;
+    }
+    .tags{
+         margin-left: 20px;
+    }
+    .ico{
+    margin-left: 20px;
+    }
+        .btn.btn2{
+            font-size: 15px;
+            padding: 2px,2px;
+        }
+    .ico .bi{
+            font-size: 20px;
+            padding-bottom: 30px;
+        border: 0;
+        border-radius: 0;
+        padding-bottom: 
+        }
+
+}
+
+.footer h4{
+    margin-bottom: 5px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.icons .bi{
+    margin:0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+}
