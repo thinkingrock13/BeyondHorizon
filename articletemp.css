@@ -158,6 +158,9 @@ hr{
     .lin{
         display: inline;
     }
+    .topl{
+        display: none;
+    }
 }
 .ico{
     margin-left: 30px;
