@@ -171,6 +171,18 @@ a:active {
         flex-direction: column;
         padding-bottom: 30px;
     }
+    .col-a{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .col-b{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .col-c{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 .subscribe{
     width:100%;
