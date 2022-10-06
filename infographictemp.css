@@ -172,6 +172,9 @@ nav .bi{
         margin-left: 20%;
         margin-right: 10px
     }
+.inl li a{
+    font-size: 18px;
+}
 hr{
     color: black;
     margin-top: 50px;
@@ -204,6 +207,9 @@ hr{
     .sou{
         margin-left: 10%;
     }
+    .inl li a{
+    font-size: 12px;
+}
     .tagtit{
         margin-left: 10%;
     }
