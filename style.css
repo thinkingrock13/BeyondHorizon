@@ -128,6 +128,7 @@ nav .bi{
     background-color: #E2FAB5 ;
     border-radius: 10px;
     margin-bottom: 5%;
+    margin-left: 10px;
     margin-right: 10px;
     padding: 30px 12px;
     box-sizing: border-box;
@@ -138,6 +139,8 @@ nav .bi{
     background-color: #E2FAB5 ;
     border-radius: 10px;
     margin-bottom: 5%;
+    margin-left: 10px;
+    margin-left: 10px;
     padding: 30px 12px;
     box-sizing: border-box;
     transition: 0.5s;
